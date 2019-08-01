@@ -4,13 +4,11 @@ import os
 
 class BatchRename():
     '''
-    批量重命名文件夹中的图片文件
+    批量重命名当前文件夹中的图片文件
 
     '''
     def __init__(self):
-        #我的图片文件夹路径horse
         self.path = os.getcwd()
-	#换成自己的图片路径
     def rename(self):
         filelist = os.listdir(self.path)
         total_num = len(filelist)
