@@ -21,8 +21,6 @@ for num in range(1,77):
 		for i in range(len(filenames)):
 			filenames[i].firstChild.data='000' + format(str(num), '0>3s')+".jpg"
 			fn = filenames[i].firstChild.data
-		
-		for i in range(len(paths)):
-			paths[i].firstChild.data='C:\\Users\\Fairy\\Desktop\\xml\\'+fn
+			
 		with open(os.path.join(path,xmlFile),'w') as fh:
 			dom.writexml(fh)
